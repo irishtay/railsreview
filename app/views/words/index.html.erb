@@ -1,0 +1,8 @@
+<h1>Word Review!</h1>
+<p><%= link_to 'New Word', new_word_path %></p>
+<% @words.each do |word| %>
+  <h2><%= word.englishword %></h2>
+  <h3><%= word.spanishword %></h3>
+  <p><%= word.body %></p>
+  <%= link_to 'Show word', word_path(word) %>
+<% end %>

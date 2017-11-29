@@ -1,0 +1,20 @@
+<h1>Create New Word</h1>
+<hr />
+
+<%= form_for @word do |f| %>
+  <%= f.label :English %>
+  <%= f.text_field :englishword %>
+  <br />
+
+  <%= f.label :Spanish %>
+  <%= f.text_field :spanishword %>
+  <br />
+
+
+  <%= f.label :body%>
+  <%= f.text_area :body%>
+  <br />
+
+  <%= f.submit %>
+
+<% end %>
